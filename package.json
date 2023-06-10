@@ -1,0 +1,20 @@
+{
+  "name": "gotrain-schedule",
+  "version": "1.0.0",
+  "description": "a go train schedule api",
+  "exports": "./src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./src/app.js",
+    "test": "NODE_OPTIONS='--experimental-vm-modules --experimental-specifier-resolution=node' jest"
+  },
+  "author": "zhihao cai",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "jest": "^29.5.0",
+    "lowdb": "^6.0.1",
+    "supertest": "^6.3.3"
+  }
+}
