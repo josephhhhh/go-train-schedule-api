@@ -18,9 +18,10 @@ class scheduleController {
       // line not found
       res.sendStatus(404);
     }else if(!departure){
-      // no departure param
+      // departure param not found
       res.send(record);
     }else if(!isValidDeparture){
+      // departure not valid
       res.sendStatus(400);
     }else{
       departure = helper.convertTo24h(departure);
